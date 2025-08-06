@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+}
+
+.resetButton {
+  margin-top: 16px;
+  margin-left: 24px;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resetButton:hover {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}

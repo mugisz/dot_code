@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+.container.active > .itemHeader {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 16px 0;
+  background: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 12px 12px 0 0;
+  transition: all 0.3s ease;
+}
+
+.deleteButton {
+  position: absolute;
+  left: 16px;
+  padding: 6px 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.deleteButton:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+.title {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+
+.container.active .title {
+  color: white;
+}

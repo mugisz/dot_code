@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0 60px;
+  justify-content: center;
+}
+
+.linkItem {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.linkItem:hover {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.05);
+}
+
+.linkItem.active {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.linkItem.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background: #3498db;
+  border-radius: 1px;
+}
